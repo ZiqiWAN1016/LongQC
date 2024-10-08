@@ -426,8 +426,11 @@ int main(int argc, char *argv[])
             kv_init(mv);
         }
         km_destroy(km);
-        fprintf(stderr, "[M::%s::%.3f*%.2f] loaded %d sequence(s). Total m_cnt: %llu (Peak RSS: %.3f GB) \n",
-                __func__, realtime() - mm_realtime0, cputime() / (realtime() - mm_realtime0), i, tot, peakrss() / 1024.0 / 1024.0 / 1024.0);
+       // fprintf(stderr, "[M::%s::%.3f*%.2f] loaded %d sequence(s). Total m_cnt: %llu (Peak RSS: %.3f GB) \n",
+      //          __func__, realtime() - mm_realtime0, cputime() / (realtime() - mm_realtime0), i, tot, peakrss() / 1024.0 / 1024.0 / 1024.0);
+        fprintf(stderr, "[M::%s::%.3f*%.2f] loaded %d sequence(s). Total m_cnt: %lu (Peak RSS: %.3f GB) \n",
+        __func__, realtime() - mm_realtime0, cputime() / (realtime() - mm_realtime0), i, tot, peakrss() / 1024.0 / 1024.0 / 1024.0);
+
     }
     
     // coverage counter
