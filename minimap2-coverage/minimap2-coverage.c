@@ -475,8 +475,8 @@ int main(int argc, char *argv[])
     assert(f);
     ks = kseq_init(f);
     i = 0;
-    uint64_t tot_m, tot_m_cnt;
-    tot_m = tot_m_cnt = 0; //debug
+//    uint64_t tot_m, tot_m_cnt;
+//    tot_m = tot_m_cnt = 0; //debug
     
     if(a.minimizer_cnt_flag){
         // vars to get minimizers. used for paper revision
